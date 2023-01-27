@@ -1,0 +1,685 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(39, 81, 199);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.menu-icon{
+    width: 35px;
+    position: absolute;
+    top: 5%;
+    right: 10;
+    cursor: pointer;
+}
+.menu-box{
+    width: 80%;
+    background: cadetblue;
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    padding: 50px 100px;
+}
+.right-links{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+.right-links img{
+    width: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.right-links a{
+    text-decoration: none;
+    color: #fff;
+    background: #777;
+    padding: 15px 40px;
+    border-radius: 30px;
+
+
+}
+.menu-links a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: fit-content;
+    margin: 30px;
+    font-size: 36px;
+
+}*/
+.header{
+    min-height: 80vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 100px;
+    background-image: url(img/Header.jpg);/*---linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),*/
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.text-box h1{
+    font-size: 20px;
+}
+
+/*
+.nav-links ul li{
+    display: block;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links{
+    position: absolute;
+    background: #4085df;
+    margin-top: -100px;
+    height: 100%;
+    width: 100%;
+    
+    text-align: right;
+    z-index: 2;
+    transition: 1s;
+
+}
+nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav-links ul{
+    padding: 30px;
+
+}*/
+
+  
+
+
+
+
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 300px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    animation: slide-in 1s 1;
+}
+.text-box span{
+    text-transform: uppercase;
+    color: white;
+    display: block;
+}
+.text1{
+    font-size: 62px;
+    letter-spacing:20px;
+    animation: text 3s 1; 
+}
+.text2{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    letter-spacing: 15px;
+    color: #fff;
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+      }
+      
+    
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+
+
+
+
+/*-------testimonials----*/
+.testimonials{
+    background-image: linear-gradient(rgba(146, 7, 226, 0.7),rgba(28, 6, 150, 0.7),rgba(3, 95, 57, 0.7)),url(img/Background.jpg);/*---*/
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col{
+    flex-basis: 40%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 5px;
+    text-align: center;
+    opacity: 0.4;
+    transition:  0.5s ;
+
+}
+.testimonials-col:hover{
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+
+.testimonials-col img{
+    align-self: center;
+    align-content: center;
+    filter: opacity(0.7);
+    height: 70px;
+    margin-top: 0;
+    border-radius: 50%;
+}
+.testimonials-col p{
+    padding: 0;
+    text-align: center;
+}
+.testimonials-col h3{
+    margin-top: auto;
+    text-align: center;
+}
+.testimonials-col .fa{
+    color: crimson;
+}
+@media(max-width:700px){
+    .testimonials-col img{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+/*----course*/
+.course{
+    /*width: 80%;*/
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{ /*made culumns*/
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*-----------------campus---*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 70vh;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+
+ /* 
+
+  /* Button used to open the contact form - fixed at the bottom of the page *//*
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default *//*
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container *//*
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields *//*
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something *//*
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button *//*
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button *//*
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */ /*
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }  */
+
+
+
+
+
+
+
+
+
+
+.campus{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    height: inherit;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.campus-col img{
+    width: 100%;
+    height: 40%;
+    display: block;
+    
+    
+}
+h1{
+    text-align: right;
+    font-size: 20px;
+    top: 10px;
+    margin-right: 5px;
+
+}
+
+p{
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 20px;
+
+}
+.btn{
+    padding: 10px 60px;
+    border: 0;
+    width: fit-content;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+
+
+}
+.open-popup{
+    visibility: visible;
+
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: blue;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px;
+
+}
+.layer{
+    background: transparent;/*  rgba(226,0,0,0.7) */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+p:hover{
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 20px;
+
+}
+.layer:hover{
+    
+    background: linear-gradient(to bottom right, blue,white);
+    background-position: top;
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------footer-----*/
+.footer{
+    background-color: rgba(2, 2, 2, 0.281);
+    color: rgb(236, 230, 230);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.rows{ /*made culumns*/
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col1{
+    
+    padding-left: 30px;
+    margin-left: 20px;
+    padding: 20px 12px;
+    position: relative;
+
+    justify-content: space-between;
+}
+.footer-col1 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.footer-col1 ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.footer-col1 ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #161616;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footer-col1 ul li:hover::after{
+    width: 100%;
+}
+@media(max-width: 700px){
+    .footer-col1 ul li{
+        display: block;
+    }
+}
+    
+.footer-col2{
+    color: black;
+    margin-right: 100px;
+    padding-right: 10%;
+    margin-bottom: 70px;
+    padding: 20px 12px;
+    position: relative;
+
+    justify-content: space-between;
+}
+
